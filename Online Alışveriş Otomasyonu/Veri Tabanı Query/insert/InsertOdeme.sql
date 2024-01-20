@@ -1,0 +1,4 @@
+INSERT INTO Odeme
+VALUES (3,'2022-10-12','Havale/EFT',2500,1)
+
+

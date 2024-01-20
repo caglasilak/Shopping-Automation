@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OnlineAlisveriVT1ModelStoreContainer" CdmEntityContainer="OnlineAlisveriVT1Entities">
+    <EntitySetMapping Name="Adminler">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.Adminler">
+        <MappingFragment StoreEntitySet="Adminler">
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kargo">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.Kargo">
+        <MappingFragment StoreEntitySet="Kargo">
+          <ScalarProperty Name="KargoID" ColumnName="KargoID" />
+          <ScalarProperty Name="SiparisID" ColumnName="SiparisID" />
+          <ScalarProperty Name="KargoTarihi" ColumnName="KargoTarihi" />
+          <ScalarProperty Name="KargoDurumu" ColumnName="KargoDurumu" />
+          <ScalarProperty Name="TeslimatAdresi" ColumnName="TeslimatAdresi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kategori">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.Kategori">
+        <MappingFragment StoreEntitySet="Kategori">
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="KategoriAdi" ColumnName="KategoriAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Musteriler">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.Musteriler">
+        <MappingFragment StoreEntitySet="Musteriler">
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="MusteriAdi" ColumnName="MusteriAdi" />
+          <ScalarProperty Name="MusteriSoyadi" ColumnName="MusteriSoyadi" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="Telno" ColumnName="Telno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Odeme">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.Odeme">
+        <MappingFragment StoreEntitySet="Odeme">
+          <ScalarProperty Name="OdemeID" ColumnName="OdemeID" />
+          <ScalarProperty Name="SiparisID" ColumnName="SiparisID" />
+          <ScalarProperty Name="OdemeTarihi" ColumnName="OdemeTarihi" />
+          <ScalarProperty Name="OdemeTuru" ColumnName="OdemeTuru" />
+          <ScalarProperty Name="OdemeTutari" ColumnName="OdemeTutari" />
+          <ScalarProperty Name="OdemeTuruID" ColumnName="OdemeTuruID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OdemeTurleri">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.OdemeTurleri">
+        <MappingFragment StoreEntitySet="OdemeTurleri">
+          <ScalarProperty Name="OdemeTuruID" ColumnName="OdemeTuruID" />
+          <ScalarProperty Name="OdemeTuruAdi" ColumnName="OdemeTuruAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SilinenMusteri">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.SilinenMusteri">
+        <MappingFragment StoreEntitySet="SilinenMusteri">
+          <ScalarProperty Name="SilinenMusteriID" ColumnName="SilinenMusteriID" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="SilinmeTarihi" ColumnName="SilinmeTarihi" />
+          <ScalarProperty Name="SilenAdmin" ColumnName="SilenAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SilinenUrunler">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.SilinenUrunler">
+        <MappingFragment StoreEntitySet="SilinenUrunler">
+          <ScalarProperty Name="SilinenUrunID" ColumnName="SilinenUrunID" />
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="SilinmeTarihi" ColumnName="SilinmeTarihi" />
+          <ScalarProperty Name="SilenID" ColumnName="SilenID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiparisDetaylari">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.SiparisDetaylari">
+        <MappingFragment StoreEntitySet="SiparisDetaylari">
+          <ScalarProperty Name="SiparisDetayID" ColumnName="SiparisDetayID" />
+          <ScalarProperty Name="SiparisID" ColumnName="SiparisID" />
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="ToplamFiyat" ColumnName="ToplamFiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Siparisler">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.Siparisler">
+        <MappingFragment StoreEntitySet="Siparisler">
+          <ScalarProperty Name="SiparisID" ColumnName="SiparisID" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="ToplamFiyat" ColumnName="ToplamFiyat" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Siparisler1">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.Siparisler1">
+        <MappingFragment StoreEntitySet="Siparisler1">
+          <ScalarProperty Name="SiparisID" ColumnName="SiparisID" />
+          <ScalarProperty Name="SiparisDetayID" ColumnName="SiparisDetayID" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Urunler">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.Urunler">
+        <MappingFragment StoreEntitySet="Urunler">
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="UrunAciklamasi" ColumnName="UrunAciklamasi" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="RenkID" ColumnName="RenkID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UrunRenkleri">
+      <EntityTypeMapping TypeName="OnlineAlisveriVT1Model.UrunRenkleri">
+        <MappingFragment StoreEntitySet="UrunRenkleri">
+          <ScalarProperty Name="RenkID" ColumnName="RenkID" />
+          <ScalarProperty Name="RenkAdi" ColumnName="RenkAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AdARA" FunctionName="OnlineAlisveriVT1Model.Store.AdARA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineAlisveriVT1Model.AdARA_Result">
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="MusteriAdi" ColumnName="MusteriAdi" />
+          <ScalarProperty Name="MusteriSoyadi" ColumnName="MusteriSoyadi" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="Telno" ColumnName="Telno" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FiyataGöreAra" FunctionName="OnlineAlisveriVT1Model.Store.FiyataGöreAra">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineAlisveriVT1Model.FiyataGöreAra_Result">
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="UrunAciklamasi" ColumnName="UrunAciklamasi" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="RenkID" ColumnName="RenkID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FiyataGöreAra1" FunctionName="OnlineAlisveriVT1Model.Store.FiyataGöreAra1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineAlisveriVT1Model.FiyataGöreAra1_Result">
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="UrunAciklamasi" ColumnName="UrunAciklamasi" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="RenkID" ColumnName="RenkID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MusteriAdiAra" FunctionName="OnlineAlisveriVT1Model.Store.MusteriAdiAra">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineAlisveriVT1Model.MusteriAdiAra_Result">
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="MusteriAdi" ColumnName="MusteriAdi" />
+          <ScalarProperty Name="MusteriSoyadi" ColumnName="MusteriSoyadi" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="Telno" ColumnName="Telno" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MusteriAra" FunctionName="OnlineAlisveriVT1Model.Store.MusteriAra">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineAlisveriVT1Model.MusteriAra_Result">
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="MusteriAdi" ColumnName="MusteriAdi" />
+          <ScalarProperty Name="MusteriSoyadi" ColumnName="MusteriSoyadi" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="Telno" ColumnName="Telno" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RenkliUrun" FunctionName="OnlineAlisveriVT1Model.Store.RenkliUrun">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineAlisveriVT1Model.RenkliUrun_Result">
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="UrunAciklamasi" ColumnName="UrunAciklamasi" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="RenkID" ColumnName="RenkID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UrunAdiAra" FunctionName="OnlineAlisveriVT1Model.Store.UrunAdiAra">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineAlisveriVT1Model.UrunAdiAra_Result">
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="UrunAciklamasi" ColumnName="UrunAciklamasi" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="RenkID" ColumnName="RenkID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

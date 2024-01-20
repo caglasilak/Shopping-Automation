@@ -1,0 +1,4 @@
+INSERT INTO OdemeTurleri
+VALUES ('KREDÝ KARTI')
+
+SELECT * FROM OdemeTurleri

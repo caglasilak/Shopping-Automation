@@ -1,0 +1,2 @@
+INSERT INTO SiparisDetaylari
+VALUES (1,1,2.200,5000)

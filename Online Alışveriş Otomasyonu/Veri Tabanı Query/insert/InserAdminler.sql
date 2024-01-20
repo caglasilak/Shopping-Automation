@@ -1,0 +1,3 @@
+INSERT INTO Adminler 
+VALUES ('EREN','1234')
+

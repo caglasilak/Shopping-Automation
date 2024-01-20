@@ -1,0 +1,1 @@
+BACKUP DATABASE [OnlineAlisveriVT2] TO DISK ='C:\Users\mehme\Desktop\yedek.bak'
